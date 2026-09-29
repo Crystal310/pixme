@@ -321,6 +321,93 @@
     <div class="section-title">§4 关注指标及决策框架</div>
 
     <div>
+      <div style="font-size:40px;font-weight:500;color:#0D47A1;margin-bottom:16px;">埋点需求（V1.7 新增）</div>
+      <div class="body-text" style="font-size:30px;color:#555555;">以下事件均为 v1.7 新增，V1.7 及以后版本生效；低于 V1.7 版本埋点不变。事件名按「一级-二级」拼接上报。</div>
+
+      <div style="font-size:34px;font-weight:500;color:#0D47A1;margin:28px 0 12px;">1）新用户流程漏斗（升级用户也上报埋点）</div>
+      <table class="metric-table">
+        <colgroup>
+          <col style="width:30%"><col style="width:70%">
+        </colgroup>
+        <thead>
+          <tr><th>事件名</th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="name">UserFlow-Splash</td><td>新用户打开 app</td></tr>
+          <tr><td class="name">UserFlow-IntroPage1</td><td>新用户 性别选择页 PV</td></tr>
+          <tr><td class="name">UserFlow-IntroPage2</td><td>新用户 年龄选择页 PV</td></tr>
+          <tr><td class="name">UserFlow-IntroPage3</td><td>新用户 皮肤选择页 PV</td></tr>
+          <tr><td class="name">UserFlow-IntroPage4</td><td>新用户 使用意图页 PV</td></tr>
+          <tr><td class="name">UserFlow-IntroPage5</td><td>新用户 功能倾向页 PV</td></tr>
+          <tr><td class="name">UserFlow-IntroPage6</td><td>新用户 图片用途页 PV</td></tr>
+          <tr><td class="name">UserFlow-IntroPage7</td><td>新用户 常用 APP 页 PV</td></tr>
+          <tr><td class="name">UserFlow-IntroPage8</td><td>新用户 效果倾向页 PV</td></tr>
+          <tr><td class="name">UserFlow-IntroPage9</td><td>新用户 加载页 PV</td></tr>
+          <tr><td class="name">UserFlow-IntroPage10</td><td>新用户 评论评分页 PV</td></tr>
+          <tr><td class="name">UserFlow-IAPPage</td><td>新用户进入新手引导后 IAP 页的 PV</td></tr>
+          <tr><td class="name">UserFlow-HomePage</td><td>新用户进入首页的 PV</td></tr>
+          <tr><td class="name">UserFlow-SelectPage</td><td>新用户进入选图页的 PV</td></tr>
+          <tr><td class="name">UserFlow-RatioPage</td><td>新用户进入比例裁剪页的 PV</td></tr>
+          <tr><td class="name">UserFlow-LoadingPage</td><td>新用户进入生成加载页的 PV</td></tr>
+          <tr><td class="name">UserFlow-ResultPage</td><td>新用户进入结果页的 PV</td></tr>
+          <tr><td class="name">UserFlow-SavePage</td><td>新用户进入保存页的 PV</td></tr>
+        </tbody>
+      </table>
+
+      <div style="font-size:34px;font-weight:500;color:#0D47A1;margin:36px 0 12px;">2）新用户流程漏斗，点击详情</div>
+      <table class="metric-table">
+        <colgroup>
+          <col style="width:30%"><col style="width:70%">
+        </colgroup>
+        <thead>
+          <tr><th>事件名</th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="name">UserFlowDetail-IntroPage1_XX</td><td>新用户 性别选择页 点击选项 Female / Male / Other / NotSay</td></tr>
+          <tr><td class="name">UserFlowDetail-IntroPage2_XX</td><td>新用户 年龄选择页 点击选项 Under18 / 18_24 / 25_34 / 45 / NotSay</td></tr>
+          <tr><td class="name">UserFlowDetail-IntroPage3_XX</td><td>新用户 皮肤选择页 点击选项 1 / 2 / 3 / 4 / 5 / 6 / NotSay</td></tr>
+          <tr><td class="name">UserFlowDetail-IntroPage4_XX</td><td>新用户 使用意图页 点击选项 Grids / NewStyles / Cinematic / AI / Other</td></tr>
+          <tr><td class="name">UserFlowDetail-IntroPage5_XX</td><td>新用户 功能倾向页 点击选项 Outfits / Hairstyle / BG / Makeup / Other</td></tr>
+          <tr><td class="name">UserFlowDetail-IntroPage6_XX</td><td>新用户 图片用途页 点击选项 Myself / Friends / SocialMedia / Work</td></tr>
+          <tr><td class="name">UserFlowDetail-IntroPage7_XX</td><td>新用户 常用 APP 页 点击选项 Ins / TK / Snapchat / Date / P / X</td></tr>
+          <tr><td class="name">UserFlowDetail-IntroPage8_XX</td><td>新用户 效果倾向页 点击选项 Enhance / Trend / Hairstyle / Dating / Studio / Retro / 80s / Daily / Elite / Vacation</td></tr>
+        </tbody>
+      </table>
+
+      <div style="font-size:34px;font-weight:500;color:#0D47A1;margin:36px 0 12px;">3）首页顶部 banner 卡片</div>
+      <table class="metric-table">
+        <colgroup>
+          <col style="width:30%"><col style="width:70%">
+        </colgroup>
+        <thead>
+          <tr><th>事件名</th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="name">TopBannerClick-Female/Male_[卡片名字]</td><td>首页顶部卡片点击情况</td></tr>
+          <tr><td class="name">TopBannerSave-Female/Male_[卡片名字]</td><td>首页顶部卡片保存情况</td></tr>
+        </tbody>
+      </table>
+
+      <div style="font-size:34px;font-weight:500;color:#0D47A1;margin:36px 0 12px;">4）效果生成监测（Qwen / Klein / Krea2）</div>
+      <table class="metric-table">
+        <colgroup>
+          <col style="width:14%"><col style="width:30%"><col style="width:56%">
+        </colgroup>
+        <thead>
+          <tr><th>模型</th><th>事件名</th><th>二级取值 / 说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="name">Qwen</td><td class="name">ProcessTime_QWEN</td><td>0-10s / 10-20s / 20-30s / 30-40s / 40-50s / 50-60s / &gt;60s；生成完成时，返回用户等待时长</td></tr>
+          <tr><td class="name">Qwen</td><td class="name">ProcessFailed_QWEN</td><td>InternetError 网络问题 / TimeoutError 超时报错 / ServerError 服务器报错 / JsonError 代码报错 / UploadError 上传图片失败 / UnknownError 其他不可控原因（算法初始化失败等）导致失败</td></tr>
+          <tr><td class="name">Klein</td><td class="name">ProcessTime_KLEIN</td><td>0-10s / 10-20s / 20-30s / 30-40s / 40-50s / 50-60s / &gt;60s；生成完成时，返回用户等待时长</td></tr>
+          <tr><td class="name">Klein</td><td class="name">ProcessFailed_KLEIN</td><td>InternetError 网络问题 / TimeoutError 超时报错 / ServerError 服务器报错 / JsonError 代码报错 / UploadError 上传图片失败 / UnknownError 其他不可控原因（算法初始化失败等）导致失败</td></tr>
+          <tr><td class="name">Krea2</td><td class="name">ProcessTime_KLEIN</td><td>0-10s / 10-20s / 20-30s / 30-40s / 40-50s / 50-60s / &gt;60s；生成完成时，返回用户等待时长</td></tr>
+          <tr><td class="name">Krea2</td><td class="name">ProcessFailed_KLEIN</td><td>InternetError 网络问题 / TimeoutError 超时报错 / ServerError 服务器报错 / JsonError 代码报错 / UploadError 上传图片失败 / UnknownError 其他不可控原因（算法初始化失败等）导致失败</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
       <div style="font-size:40px;font-weight:500;color:#0D47A1;margin-bottom:16px;">关注指标</div>
       <table class="metric-table">
         <colgroup>
@@ -357,7 +444,7 @@
       </table>
     </div>
 
-    <div class="footer-note">※ 埋点要求与具体事件定义不在本 PRD 中输出，需要时可单独使用 tracking-events skill 补充。</div>
+    <div class="footer-note">※ 本节仅列 v1.7 新增埋点；完整埋点口径与历史事件定义见《1.7 埋点》表格：<a href="https://docs.google.com/spreadsheets/d/1uxEGSrMC6ruB4pzGPEfomBnE44IIPztmDL9Z5HFwYlE/edit?gid=627616377#gid=627616377">1.7 埋点</a></div>
   </section>
 
 </div>
